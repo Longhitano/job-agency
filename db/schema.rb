@@ -26,6 +26,10 @@ ActiveRecord::Schema.define(version: 20150914182506) do
   create_table "shifts", force: true do |t|
     t.string   "title"
     t.string   "text"
+    t.string   "location"
+    t.string   "client"
+    t.string   "duration"
+    t.string   "rate"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

@@ -4,12 +4,20 @@
   <tr>
     <th>Title</th>
     <th>Text</th>
+    <th>Location</th>
+    <th>Client</th>
+    <th>Duration</th>
+    <th>Rate (£/h)</th>
   </tr>
  
   <% @shifts.each do |shift| %>
     <tr>
       <td><%= shift.title %></td>
       <td><%= shift.text %></td>
+      <td><%= shift.location %></td>
+      <td><%= shift.client %></td>
+      <td><%= shift.duration %></td>
+      <td><%= shift.rate %></td>
       <td><%= link_to 'Show', shift_path(shift) %></td>
       <td><%= link_to 'Edit', edit_shift_path(shift) %></td>
       <td><%= link_to 'Destroy', shift_path(shift),

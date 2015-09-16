@@ -53,7 +53,7 @@ class ShiftsController < ApplicationController
 
 	private
   def shift_params
-    params.require(:shift).permit(:title, :text)
+    params.require(:shift).permit(:title, :text, :location, :client, :duration, :rate)
   end
 
   
